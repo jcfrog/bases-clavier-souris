@@ -1,0 +1,27 @@
+img.noborder{
+    border: none !important;
+    background: none !important;
+    box-shadow: none !important;
+	margin: 0 !important;
+}
+img.white{
+  background: white !important;
+}
+jc-nospace{
+	margin:0 !important;
+}
+
+.jc-highlight {
+	color:#cf0;
+	font-weight:bold;
+}
+.jc-left {
+  text-align: left;
+}
+.orange-txt{
+  color : orange;
+}
+
+.source {
+  font-size: 0.7rem !important;
+}

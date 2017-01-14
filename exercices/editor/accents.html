@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Accents</title>
+    <link rel="stylesheet" href="../exos.css">
+
+</head>
+<body>
+    <script src="../xtras/jquery-3.1.1.js"></script>
+    <script src="tinymce4-5-2/tinymce.min.js"></script>
+    <script>
+    var score = 0 ;
+    $( document ).ready(function() {
+      tinymce.init({
+        selector: 'textarea',
+        height: 10,
+        menubar: false,
+        plugins: [
+          'advlist autolink lists link image charmap print preview anchor textcolor',
+          'searchreplace visualblocks code fullscreen',
+          'insertdatetime media table contextmenu paste code'
+        ],
+        // toolbar: 'undo redo | insert | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image',
+         toolbar: 'undo redo | bold italic forecolor backcolor  ',
+      });
+    });
+
+    </script>
+
+    <div class="exercice">
+      <p>
+        <ol>
+          <li>Saisir "ï"</li>
+          <li>Saisir "Ô" (^ puis O majuscule)</li>
+          <li>Saisir "ù" (` puis u, attention, altGr demandé...)</li>
+        </ol>
+        <textarea>
+        </textarea>
+      </p>
+    </div>
+
+</body>
+</html>

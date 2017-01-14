@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Suppression</title>
+    <link rel="stylesheet" href="../exos.css">
+
+</head>
+<body>
+    <script src="../xtras/jquery-3.1.1.js"></script>
+    <script src="tinymce4-5-2/tinymce.min.js"></script>
+    <script>
+    var score = 0 ;
+    $( document ).ready(function() {
+      tinymce.init({
+        selector: 'textarea',
+        height: 300,
+        menubar: false,
+        plugins: [
+          'advlist autolink lists link image charmap print preview anchor textcolor',
+          'searchreplace visualblocks code fullscreen',
+          'insertdatetime media table contextmenu paste code'
+        ],
+        // toolbar: 'undo redo | insert | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image',
+         toolbar: 'undo redo | bold italic forecolor backcolor  ',        
+      });
+    });
+
+    </script>
+
+    <div class="exercice">
+      <p>
+        <ol>
+          <li>Positionner le curseur à la fin de "martien" et utiliser "Retour arrière" pour effacer le mot.</li>
+          <li>Sélectionner la 1ère phrase puis l'effacez avec "Suppr".</li>
+          <li>Utiliser le raccourci Ctrl+A pour tout sélectionner, puis effacez tout</li>
+          <li>Utiliser Ctrl+Z pour annuler et restaurer ce beau texte :)</li>
+        </ol>
+        <textarea><p>Déclaration des droits du martien</p>
+          <p>Art. 1er. Les hommes naissent et demeurent libres et égaux en droits. Les distinctions sociales ne peuvent être fondées que sur l'utilité commune.</p>
+<p>Art. 2. Le but de toute association politique est la conservation des droits naturels et imprescriptibles de l'Homme. Ces droits sont la liberté, la propriété, la sûreté, et la résistance à l'oppression.</p>
+<p>Art. 3. Le principe de toute Souveraineté réside essentiellement dans la Nation. Nul corps, nul individu ne peut exercer d'autorité qui n'en émane expressément.</p>
+<p>Art. 4. La liberté consiste à pouvoir faire tout ce qui ne nuit pas à autrui : ainsi, l'exercice des droits naturels de chaque homme n'a de bornes que celles qui assurent aux autres Membres de la Société la jouissance de ces mêmes droits. Ces bornes ne peuvent être déterminées que par la Loi.</p>
+        </textarea>
+      </p>
+    </div>
+
+</body>
+</html>

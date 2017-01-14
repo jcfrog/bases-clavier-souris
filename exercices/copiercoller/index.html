@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Copier Coller</title>
+    <link rel="stylesheet" href="../exos.css">
+</head>
+<body>
+
+    <script src="../xtras/jquery-3.1.1.js"></script>
+    <script>
+    var score = 0 ;
+    $( document ).ready(function() {
+    });
+
+
+    </script>
+
+<style>
+
+#ex1{
+  width:100%;
+}
+.exercice > p > input {
+  padding : 10px;
+  margin : 10px;
+}
+.exercice > p {
+  color : #000;
+}
+.small {
+  font-size: 18px;
+}
+</style>
+
+    <p class="small">Copier = Ctrl+C (pc) ou Cmd+C (mac)</p>
+    <p class="small">Coller = Ctrl+V (pc) ou Cmd+V (mac)</p>
+    <p class="small">Couper = Ctrl+X (pc) ou Cmd+X (mac)</p>
+    <div class="exercice">
+      <p>Copier le texte de gauche dans la case de droite<br>
+        <input class="field1" value="Bonjour la compagnie"><input class="field2" value="">
+      </p>
+    </div>
+    <div class="exercice">
+      <p>Coupez le texte de gauche pour le mettre dans la case de droite<br>
+        <input class="field1" value="Bonjour la compagnie"><input class="field2" value="">
+      </p>
+    </div>
+    <div class="exercice">
+      <p>Coupez l'article 2 pour le coller dans la zone de saisie de droite<br>
+        <textarea rows=15 cols=50>Art. 1er. Les hommes naissent et demeurent libres et égaux en droits. Les distinctions sociales ne peuvent être fondées que sur l'utilité commune.
+
+Art. 2. Le but de toute association politique est la conservation des droits naturels et imprescriptibles de l'Homme. Ces droits sont la liberté, la propriété, la sûreté, et la résistance à l'oppression.
+
+Art. 3. Le principe de toute Souveraineté réside essentiellement dans la Nation. Nul corps, nul individu ne peut exercer d'autorité qui n'en émane expressément.
+ </textarea><textarea rows=15 cols=50></textarea>
+      </p>
+    </div>
+</body>
+</html>

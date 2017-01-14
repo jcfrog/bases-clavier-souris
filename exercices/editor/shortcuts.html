@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Shortcuts</title>
+    <link rel="stylesheet" href="../exos.css">
+
+</head>
+<body>
+    <script src="../xtras/jquery-3.1.1.js"></script>
+    <script src="tinymce4-5-2/tinymce.min.js"></script>
+    <script>
+    var score = 0 ;
+    $( document ).ready(function() {
+      tinymce.init({
+        selector: 'textarea',
+        height: 300,
+        menubar: false,
+        plugins: [
+          'advlist autolink lists link image charmap print preview anchor textcolor',
+          'searchreplace visualblocks code fullscreen',
+          'insertdatetime media table contextmenu paste code'
+        ],
+        // toolbar: 'undo redo | insert | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image',
+         toolbar: 'undo redo | bold italic forecolor backcolor  ',
+      });
+    });
+
+    </script>
+
+    <div class="exercice">
+      <p>
+        <ol>
+          <li>Utiliser la touche "Entrée" pour séparer les article en paragraphes distincts. On peut chercher "art"... (Ctrl+F = chercher)</li>
+          <li>Mettre en gras les "Art n.". (Ctrl+B = gras)</li>
+          <li>Mettre le premier article en italique. (Ctrl+I = italique)</li>
+          <li>Non finalement, c'est moche italique, on annule :) (Ctrl+Z = annuler)</li>
+        </ol>
+        <textarea>Art. 1er. Les hommes naissent et demeurent libres et égaux en droits. Les distinctions sociales ne peuvent être fondées que sur l'utilité commune.
+Art. 2. Le but de toute association politique est la conservation des droits naturels et imprescriptibles de l'Homme. Ces droits sont la liberté, la propriété, la sûreté, et la résistance à l'oppression.
+Art. 3. Le principe de toute Souveraineté réside essentiellement dans la Nation. Nul corps, nul individu ne peut exercer d'autorité qui n'en émane expressément.
+Art. 4. La liberté consiste à pouvoir faire tout ce qui ne nuit pas à autrui : ainsi, l'exercice des droits naturels de chaque homme n'a de bornes que celles qui assurent aux autres Membres de la Société la jouissance de ces mêmes droits. Ces bornes ne peuvent être déterminées que par la Loi.
+Art. 5.  La Loi n'a le droit de défendre que les actions nuisibles à la Société. Tout ce qui n'est pas défendu par la Loi ne peut être empêché, et nul ne peut être contraint à faire ce qu'elle n'ordonne pas.
+Art. 6. La Loi est l'expression de la volonté générale. Tous les Citoyens ont droit de concourir personnellement, ou par leurs Représentants, à sa formation. Elle doit être la même pour tous, soit qu'elle protège, soit qu'elle punisse. Tous les Citoyens étant égaux à ses yeux sont également admissibles à toutes dignités, places et emplois publics, selon leur capacité, et sans autre distinction que celle de leurs vertus et de leurs talents.
+        </textarea>
+      </p>
+    </div>
+
+</body>
+</html>

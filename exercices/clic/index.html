@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Start</title>
+    <link rel="stylesheet" href="../exos.css">
+</head>
+<body>
+
+    <script src="../xtras/jquery-3.1.1.js"></script>
+    <script>
+    var score = 0 ;
+    $( document ).ready(function() {
+      nextChoice();
+    });
+
+    function nextChoice(){
+      $("#clicarea").off("click").off("dblclick").off("contextmenu");
+      var choice = Math.floor(Math.random()*3);
+      var action = "" ;
+      $(".action").hide();
+      switch (choice) {
+        case 0:
+          $("#clic").show();
+          action = "click";
+          break;
+        case 1:
+          $("#doubleclic").show();
+          action = "dblclick";
+          break;
+        case 2:
+          $("#clicdroit").show();
+          action = "contextmenu";
+          break;
+        default:
+        break;
+      }
+      bgColor = "rgb("+Math.floor(Math.random()*255)+","+Math.floor(Math.random()*255)+","+Math.floor(Math.random()*255)+")";
+      $("#clicarea").on(action, function(e){
+        e.preventDefault();
+        score ++ ;
+        updateScore();
+      }).css("background-color",bgColor);
+
+    }
+
+    function updateScore(){
+      $("#score").html(score);
+      nextChoice();
+    }
+    </script>
+
+<style>
+#clicarea {
+  width : 500px;
+  height : 100px;
+}
+#scorediv , #request {
+  font-size : 40px;
+}
+.action{
+  font-weight: bold;
+  color : #85d500;
+}
+#score{
+  color : #85d500;
+}
+</style>
+    <p>Utilisez les boutons de votre souris pour cliquer sur le pavé coloré comme demandé.
+    ( <a href="javascript:location.reload();">redémarrer</a> )</p>
+    <div id="scorediv">Votre score: <span id="score">0</span> </div>
+    <div id="request">Action demandée : <br>"<span id="clic" class="action">clic</span><span id="doubleclic" class="action">double clic</span><span id="clicdroit" class="action">clic droit</span>"
+    </div>
+    <div id="clicarea"></div>
+</body>
+</html>
