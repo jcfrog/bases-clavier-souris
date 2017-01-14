@@ -1,0 +1,454 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Clavier, souris : les bases</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<link rel="stylesheet" href="css/perso.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+	<style>
+	textarea {
+		width : 45%;
+		font-size : 30px;
+	}
+	</style>
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>Souris et clavier</h1>
+					<h3>Les bases</h3>
+					<p>
+						<small>Par <a href="http://jcfrog.com">jerome choain</a> / <a href="http://twitter.com/jcfrog">@jcfrog</a></small>
+					</p>
+				</section>
+				<section>
+					<h1>Interaction</h1>
+					<p>Le clavier et la souris sont des <span class="jc-highlight">périphériques</p> qui nous permettent de communiquer avec la machine.</p>
+				</section>
+				<section>
+					<h1>Plan</h1>
+					<ul>
+						<li class="fragment fade-up">La souris</li>
+						<li class="fragment fade-up">Le clavier</li>
+						<li class="fragment fade-up">Le copier coller, et autres astuces diaboliques :)</li>
+					</ul>
+				</section>
+
+				<section>
+					<h1>La souris</h1>
+					<p>
+						<img src="assets/mouse.png" width="60%">
+					</p>
+				</section>
+
+				<section>
+					<section>
+						<h2>Le pointeur et le clic</h2>
+						<p>
+							"Clic" = un appui court sur le bouton gauche de la souris<br>
+							<img src="assets/cursor-clic.gif">
+						</p>
+					</section>
+					<section>
+						<p>
+							"Double Clic" = 2 appuis courts consécutifs sur le bouton gauche de la souris<br>
+							<img src="assets/doubleclic.gif">
+						</p>
+					</section>
+					<section>
+						<p>
+							"Clic droit" = un appui court sur le bouton droit de la souris<br>
+							<img src="assets/rightclic.gif">
+						</p>
+					</section>
+					<section>
+						<p>Exercice : <a href="exercices/clic/index.html" target="_blank">clics</a> </p>
+						<iframe data-src="exercices/clic/index.html" width="545" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h1>Le glisser/déposer</h1>
+						<p>Permet de déplacer un ou plusieurs éléments sélectionnés</p>
+						<ol>
+							<li class="fragment fade-up">Clic bouton gauche et maintien de l'appui</li>
+							<li class="fragment fade-up">Déplacement</li>
+							<li class="fragment fade-up">Relachement du bouton</li>
+						</ol>
+						</p>
+					</section>
+					<section>
+						<p>Exercice : <a href="exercices/glissedepose/index.html" target="_blank">glisser déposer</a> </p>
+						<iframe data-src="exercices/glissedepose/index.html" width="545" height="455" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+					</section>
+					<section>
+						<p>On peut aussi s'en servir pour déplacer des fichiers...<img class="fragment fade-up" src="assets/movefiles.gif"></p>
+
+						<p class="fragment fade-up">mais c'est dangereux.</p>
+						<p class="fragment fade-up">Mieux vaut utiliser le clavier.</p>
+					</section>
+					<section>
+						<img src="assets/catdraganddrop.jpg" alt="">
+					</section>
+				</section>
+
+				<section>
+					<h2>La souris et les textes</h2>
+					<p class="fragment fade-up">Un clic permet de positionner le <span class="jc-highlight">curseur d'écriture</span>.</p>
+					<p class="fragment fade-up">La souris permet également de faire une <span class="jc-highlight">sélection</span>.</p>
+					<img class="fragment fade-up" src="assets/selectionaction.gif">
+				</section>
+				<section>
+					<section>
+						<ul>
+							<li>Toute <span class="jc-highlight">action</span> se fait sur une <span class="jc-highlight">sélection</span>.</li>
+							<li class="fragment fade-up">Toute sélection à un <span class="jc-highlight">début</span> et une <span class="jc-highlight">fin</span>.</li>
+						</ul>
+						<img class="fragment fade-up" src="assets/selectionstartend.png">
+					</section>
+					<section>
+						<p>Sélectiond de plusieurs lignes</p>
+						<img src="assets/selectionarticle.png">
+					</section>
+					<section>
+						<p>Clic = sélection vide</p>
+						<img src="assets/selectionempty.png">
+					</section>
+				</section>
+
+				<section>
+					<p>Exercice : <a href="exercices/texteselection/index.html" target="_blank">texte et souris</a> </p>
+					<iframe data-src="exercices/texteselection/index.html" width="850" height="550" frameborder="0" marginwidth="0" marginheight="0" scrolling="yes" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+				</section>
+
+
+				<section>
+					<section>
+						<h1>Le clavier</h1>
+						<img src="assets/allkeys.png">
+					</section>
+					<section>
+						<h3>Clavier AZERTY/QWERTY?</h3>
+						<img src="assets/azerty.png">
+					</section>
+					<section>
+						<h3>Les touches</h3>
+						<img src="assets/keyboard.png">
+						<ol>
+							<li class="fragment fade-up">Fonctions multiples</li>
+							<li class="fragment fade-up">combinaisons</li>
+						</ol>
+					</section>
+					<section>
+						<h3>Les lettres</h3>
+						<img src="assets/azerty-lettres.png">
+					</section>
+					<section>
+						<h3>Les majuscules</h3>
+						<img src="assets/machineaecrire.jpg" width="60%">
+					</section>
+					<section>
+						<h3>Touches "majuscules"</h3>
+						<p>On utilise une <span class="jc-highlight">touche modificatrice</span></p>
+						<img src="assets/azerty-maj.png">
+					</section>
+					<section>
+						<p>Un appui <span class="jc-highlight">simultané</span> : T = Maj + "t"</p>
+						<img src="assets/azerty-maj.gif">
+					</section>
+					<section>
+						<h3>Touches "Verrouillage majuscules"</h3>
+						<img src="assets/verrouillage.png">
+						<p class="fragment fade-up">Une petite diode <span style="width:18px;height:18px;background-color:#cf0;display:inline-block;border-radius:50%"></span> sur le clavier indique le verrouillage</p>
+					</section>
+					<section>
+						<p>Exercice : <a href="exercices/editor/index.html" target="_blank">édition simple</a> </p>
+						<iframe data-src="exercices/editor/index.html" width="850" height="450" frameborder="0" marginwidth="0" marginheight="0" scrolling="yes" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+					</section>
+					<section>
+						<h3>Touches modificatrices</h3>
+						<ul>
+							<li class="fragment fade-up">caractère par défaut : en bas à gauche</li>
+							<li class="fragment fade-up">caractère en haut atteint grâce à la touche <span class="jc-highlight">Majuscule</span></li>
+							<li class="fragment fade-up">caractère en bas à droite atteint grâce à la touche <span class="jc-highlight">Alt Gr</span></li>
+						</ul>
+						<img src="assets/touches modificatrices.png">
+					</section>
+					<section>
+						<p>Exercice : <a href="exercices/editor/editmodificationkeys.html" target="_blank">édition simple</a> </p>
+						<iframe data-src="exercices/editor/editmodificationkeys.html" width="850" height="450" frameborder="0" marginwidth="0" marginheight="0" scrolling="yes" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+					</section>
+					<section>
+						<h3>La touche Entrée</h3>
+						<p>Sert à <span class="jc-highlight">passer à la ligne</span> ou <span class="jc-highlight">valider</span></p>
+						<img src="assets/return.png" alt="">
+					</section>
+					<section>
+						<h3>Barre d'espace et ponctuation</h3>
+						<img src="assets/spacebar.png" alt="">
+					</section>
+					<section>
+						<p>Exercice : <a href="exercices/editor/ponctuation.html" target="_blank">ponctuation</a> </p>
+						<iframe data-src="exercices/editor/ponctuation.html" width="850" height="450" frameborder="0" marginwidth="0" marginheight="0" scrolling="yes" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+					</section>
+					<section>
+						<h3>Les touches pour raccourcis</h3>
+						<p>Servent à faire des <span class="jc-highlight">combinaisons</span></p>
+						<img src="assets/combinaisons.png" alt="">
+					</section>
+					<section>
+						<p>Chaque programme a ses <span class="jc-highlight">raccourcis</span></p>
+						<img src="assets/menu-save.png" alt="">
+					</section>
+					<section>
+						<p>Quelques grands classiques des raccourcis</p>
+						<ul>
+							<li class="fragment fade-up">Ctrl+S : Enregistrer (Save)</li>
+							<li class="fragment fade-up">Ctrl+O : Ouvrir (Open)</li>
+							<li class="fragment fade-up">Ctrl+N : Nouveau (New)</li>
+							<li class="fragment fade-up">Alt+TAB : change de programme actif (PC)</li>
+							<li class="fragment fade-up">Ctrl+Z : Annule la dernière opération (Undo)</li>
+							<li class="fragment fade-up">Ctrl+Y : Refait la dernière opération annulée (Redo)</li>
+							<li class="fragment fade-up">Ctrl+Roulette : Zoom</li>
+						</ul>
+					</section>
+					<section>
+						<p>Exercice : <a href="exercices/editor/shortcuts.html" target="_blank">édition avancée</a> </p>
+						<iframe data-src="exercices/editor/shortcuts.html" width="850" height="450" frameborder="0" marginwidth="0" marginheight="0" scrolling="yes" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+					</section>
+					<section>
+						<h3>La touche Echappe</h3>
+						<p>"Escape" en anglais, sert en général à <span class="jc-highlight">annuler</span> une commande.</p>
+						<img src="assets/dialog.png" alt="">
+					</section>
+					<section>
+						<h3>La touche TAB</h3>
+						<p class="fragment fade-up">Ajouter une tabulation</p>
+						<p class="fragment fade-up">se déplacer entre les champs d'un formulaire.</p>
+						<p class="fragment fade-up">Connue aussi pour le raccourci Alt+TAB</p>
+						<img src="assets/tab.png" alt="">
+					</section>
+					<section>
+						<p>Exercice : <a href="exercices/editor/tab.html" target="_blank">tabulation</a> </p>
+						<iframe data-src="exercices/editor/tab.html" width="850" height="450" frameborder="0" marginwidth="0" marginheight="0" scrolling="yes" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+					</section>
+
+					<section>
+						<h3>Le pavé numérique</h3>
+						<p class="fragment fade-up">Touches destinées au calcul</p>
+						<p class="fragment fade-up">Verrouillage Numérique indépendant</p>
+						<img src="assets/pavenum.png" alt="">
+					</section>
+<style>
+.key{
+	width : 3rem;
+	height : 3rem;
+	border-radius: .3rem;
+	display : inline-block;
+}
+.orange{
+	background-color: orange;
+	color:black;
+}
+</style>
+					<section>
+						<h3>Drôles d'accents</h3>
+						<p class="fragment fade-up">A utiliser <span class="jc-highlight">séquentiellement</span></p>
+						<p class="fragment fade-up">Accent, puis lettre : <span class="orange key">^</span> puis <span class="orange key">o</span> donne <span class="jc-highlight">ô</span></p>
+						<img src="assets/accent.png" alt="">
+					</section>
+					<section>
+						<p>Exercice : <a href="exercices/editor/accents.html" target="_blank">accents</a> </p>
+						<iframe data-src="exercices/editor/accents.html" width="850" height="450" frameborder="0" marginwidth="0" marginheight="0" scrolling="yes" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+					</section>
+
+					<section>
+						<h3>Suppressions</h3>
+						<p class="fragment fade-up">"Suppr" supprime la <span class="jc-highlight">sélection courante</span></p>
+						<p class="fragment fade-up">Texte : "Suppr" supprime le <span class="jc-highlight">caractère suivant</span></p>
+						<p class="fragment fade-up">"Retour arrière" supprime le <span class="jc-highlight">caractère précedent</span></p>
+						<img src="assets/suppr.png" alt="">
+					</section>
+					<section>
+						<p>Exercice : <a href="exercices/editor/suppr.html" target="_blank">suppressions</a> </p>
+						<iframe data-src="exercices/editor/suppr.html" width="850" height="450" frameborder="0" marginwidth="0" marginheight="0" scrolling="yes" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+					</section>
+
+					<section>
+						<h3>Touches de déplacement</h3>
+						<img src="assets/moves.png" alt="">
+					</section>
+					<section>
+						<p >Déplacent par exemple le <span class="jc-highlight">curseur d'écriture</span></p>
+						<img src="assets/movecursor.gif" alt="">
+					</section>
+					<section>
+						<p >Permettent aussi de déplacer <span class="jc-highlight">le pointeur de fichier</span></p>
+						<img src="assets/movefilescurs.gif" alt="">
+					</section>
+					<section>
+						<p >Font des merveilles combinées avec <span class="jc-highlight">Ctrl</span> et <span class="jc-highlight">Maj</span></p>
+						<p class="fragment fade-up"><span class="jc-highlight">Maj+Déplacement</span> déplace la fin de sélection.</p>
+						<p class="fragment fade-up"><span class="jc-highlight">Ctrl+Déplacement</span> amplifie le déplacement.</p>
+					</section>
+					<section>
+						<p >Exemple dans un texte</p>
+						<img src="assets/movesseltext.gif" alt="">
+					</section>
+					<section>
+						<p >Exemple sur des fichiers dans un dossier</p>
+						<img src="assets/moveselectfiles.gif" alt="">
+					</section>
+
+					<section>
+						<p>Exercice : <a href="exercices/editor/moves.html" target="_blank">déplacements</a> </p>
+						<iframe data-src="exercices/editor/moves.html" width="850" height="450" frameborder="0" marginwidth="0" marginheight="0" scrolling="yes" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+					</section>
+
+					<section>
+						<h3>Touches Fonction</h3>
+						<img src="assets/functions.png" alt=""><br>
+						<p class="fragment fade-up">Exemple : F1 affiche l'aide</p>
+						<p class="fragment fade-up">Exemple : Navigateur, F5 rafraichit la page</p>
+					</section>
+
+					<section>
+						<h3>Touche Insertion</h3>
+						<img src="assets/inser.png" alt=""><br>
+						<img class="fragment fade-up" src="assets/insert.gif" alt=""><br>
+						<img class="fragment fade-up" src="assets/override.gif" alt=""><br>
+					</section>
+
+					<section>
+						<h3>Touche Menu Contextuel</h3>
+						<img src="assets/contextuel.png" alt=""><br>
+					</section>
+
+					<section>
+						<h3>Touches Systeme</h3>
+						<img src="assets/windows.png" alt=""><br>
+						<p class="fragment fade-up">Exemple : Windows + E lance l'Explorateur de fichiers</p>
+					</section>
+
+					<section>
+						<h3>Autre touches</h3>
+						<img src="assets/print.png" alt=""><br>
+					</section>
+
+
+				</section>
+
+				<section>
+					<h2>Copier/Coller</h2>
+					<p>
+						<textarea rows=10>Art. 1er. Les hommes naissent et demeurent libres et égaux en droits. Les distinctions sociales ne peuvent être fondées que sur l'utilité commune.
+</textarea>
+						<textarea rows=10></textarea>
+					</p>
+					<p>
+						<span class="jc-highlight">Ctrl+C</span> : copier
+						/ <span class="jc-highlight">Ctrl+V</span> : coller
+						/ <span class="jc-highlight">Ctrl+X</span> : couper
+					</p>
+				</section>
+				<section>
+					<p>Exercice : <a href="exercices/copiercoller/index.html" target="_blank">Copier coller couper</a> </p>
+					<iframe data-src="exercices/copiercoller/index.html" width="850" height="450" frameborder="0" marginwidth="0" marginheight="0" scrolling="yes" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+				</section>
+
+				<section>
+					<section>
+						<h3>Le presse papier</h3>
+						<p><img class="noborder" src="assets/copiecolleprogrammes.png" alt=""></p>
+					</section>
+					<section>
+						<h3>Le presse papier</h3>
+						<p>Sélection source / Ctrl+X / clic destination / Ctrl+V</p>
+							<img class="noborder" src="assets/coupercollerfiles.gif" alt="">
+					</section>
+				</section>
+
+
+				<section>
+					<h3>Sélection multiple</h3>
+					<p class="fragment fade-up" ><span class="jc-highlight">Maj+Clic</span> : indique la fin de la sélection</p>
+					<p class="fragment fade-up" ><span class="jc-highlight">Ctrl+Clic</span> : ajoute ou retire de la sélection</p>
+					<img class="fragment fade-up" src="assets/selectionmultiple.gif" alt="">
+				</section>
+
+<section>
+	<img src="assets/merci.gif" alt="">
+</section>
+
+
+
+
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
